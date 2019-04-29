@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <url value="http://hl7.org/fhir/us/cdl/ImplementationGuide/ig"/>
+  <version value="0.1.0"/>
+  <name value="FHIRtoCDISCLaboratoryDataMapping"/>
+  <title value="FHIR to CDISC Laboratory Data Mapping"/>
+  <status value="draft"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+<copyright value="Used by permission of HL7, all rights reserved Creative Commons License"/>
+<contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/rcrim"/>
+    </telecom>
+  </contact>
+  <packageId value="hl7.org.fhir.us.cdl"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <resource><reference><reference value="CapabilityStatement/server"/></reference><exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="index.md"/>
+      <title value="FHIR to CDISC Laboratory Data Mapping IG"/>
+      <generation value="markdown"/>
+    </page>
+  </definition>
+</ImplementationGuide>
