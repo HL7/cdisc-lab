@@ -17,7 +17,7 @@ The FHIR to CDISC mapping is useful for understanding how to relate FHIR resourc
 
 [Data Mapping](LAB_LB_FHIR_mapping_and_gaps_for_IG.htm)
 
-Download the entire spreadsheet here:  [LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx](LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx)
+Download the entire spreadsheet here:  [LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx](LAB_LB_FHIR_mapping_and_gaps_for_IG_01-16-2019.xlsx)
 
 <br/>
 
@@ -29,7 +29,7 @@ No profiles are applicable  for this implementation guide.
 
 ### Extensions
 
-* Observation: Observation to ResearchStudy linkage (event-researchStudy) associates lab results with a particular study [need to check - was in ballot  #2](http://hl7.org/fhir/StructureDefinition/event-researchStudy) 
+* Observation: Observation to ResearchStudy linkage (workflow-researchStudy) associates lab results with a particular study [Observation to ResearchStudy](http://hl7.org/fhir/StructureDefinition/workflow-researchStudy) 
 * Specimen: Cqf-relativeDateTime captures the collection relative to an event, such as administration of medication [Relative Collection](https://www.hl7.org/fhir/extension-cqf-relativedatetime.html) 
 * Race: Patient race (us-core-race) [Race](http://www.hl7.org/fhir/us/core/StructureDefinition-us-core-race.html) 
 
