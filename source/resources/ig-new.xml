@@ -3,20 +3,20 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/doug/Documents/cdl-master/source/resources"/>
+    <valueString value="/Users/doug/Documents/HL7/cdisc-lab/source/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/doug/Documents/cdl-master/source/examples"/>
+    <valueString value="/Users/doug/Documents/HL7/cdisc-lab/source/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/doug/Documents/cdl-master/framework"/>
+    <valueString value="/Users/doug/Documents/HL7/cdisc-lab/framework"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/doug/Documents/cdl-master/source/pages"/>
+    <valueString value="/Users/doug/Documents/HL7/cdisc-lab/source/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/cdl/ImplementationGuide/ig"/>
   <version value="0.1.0"/>
-  <name value="FHIRtoCDISCLaboratoryDataMapping"/>
+  <name value="FHIR to CDISC Laboratory Data Mapping"/>
   <title value="FHIR to CDISC Laboratory Data Mapping"/>
   <status value="draft"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>

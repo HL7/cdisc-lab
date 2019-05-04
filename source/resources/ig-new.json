@@ -3,23 +3,23 @@
   "id" : "ig",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/doug/Documents/cdl-master/source/resources"
+    "valueString" : "/Users/doug/Documents/HL7/cdisc-lab/source/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/doug/Documents/cdl-master/source/examples"
+    "valueString" : "/Users/doug/Documents/HL7/cdisc-lab/source/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/doug/Documents/cdl-master/framework"
+    "valueString" : "/Users/doug/Documents/HL7/cdisc-lab/framework"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/doug/Documents/cdl-master/source/pages"
+    "valueString" : "/Users/doug/Documents/HL7/cdisc-lab/source/pages"
   }],
   "url" : "http://hl7.org/fhir/us/cdl/ImplementationGuide/ig",
   "version" : "0.1.0",
-  "name" : "FHIRtoCDISCLaboratoryDataMapping",
+  "name" : "FHIR to CDISC Laboratory Data Mapping",
   "title" : "FHIR to CDISC Laboratory Data Mapping",
   "status" : "draft",
   "publisher" : "HL7 International - Biomedical Research and Regulation Work Group",
