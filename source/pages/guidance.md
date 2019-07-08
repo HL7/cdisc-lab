@@ -32,26 +32,7 @@ The implementation guidance outlined in this page provides useful information fo
 
 ### Gaps  
 
-​Some attributes or variables within the CDISC standards do not have corresponding attributes within a FHIR resource.  In some circumstances, data are provided through an alternative method, such as a supplemental file or transmission agreement. Below are the identified gaps.  Please see the data mapping document for mitigation suggestions.
-
-**LAB Gaps**
-* Good Transmission Practice (GTP) fields for Model Version, Creation Date/Time, Transaction Type, Transmission Source ID, and Transmission Source Name (obtain from alternative method)
-* Result Class (see below)
-* Study Test Type (see below)
-* Visit Name (see below)
-
-**CDASH LB Variable Gaps**
-* VISIT (see Encounter Name, below)
-* LBCOND (could obtain from Case Report Form or specimen entries)
-
-**SDTM LB Variable Gaps**
-* VISIT (see Encounter Name, below)
-
-The following items were out-of-scope for FHIR R4, but are being discussed for a future release:
-* Observation: Result Class (for FHIR to LAB translation; tells what type of result the site is providing).  This is awaiting Orders and Observations prioritization
-* Observation: Study Test Type (values are: Study, non-Study). This is awaiting Orders and Observations prioritization.
-* Encounter: Encounter Name (visit name).  Patient Administration will consider an extension to the resource in a future release.
-
+​Some attributes or variables within the CDISC standards do not have corresponding attributes within a FHIR resource.  In some circumstances, data are provided through an alternative method, such as a supplemental file or transmission agreement. Alternately, data may be derived through information provided in a different field and/or resource. Please see the data mapping document for gap and mitigation information.
 <br/>
 
 ### Target State  

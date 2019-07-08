@@ -1,5 +1,4 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:x="urn:schemas-microsoft-com:office:excel"
 xmlns="http://www.w3.org/TR/REC-html40">
 
@@ -66,8 +65,8 @@ else
  <col class=xl83 width=135 style='mso-width-source:userset;mso-width-alt:4937;
  width:101pt'>
  <tr class=xl77 height=20 style='height:15.0pt'>
-  <td height=20 class=xl85 width=126 style='height:15.0pt;width:95pt'><a
-  name="_FilterDatabase">Element Name</a></td>
+  <td height=20 class=xl85 width=126 style='height:15.0pt;width:95pt'>Element
+  Name</td>
   <td class=xl85 width=135 style='border-left:none;width:101pt'>Attribute Name</td>
   <td class=xl76 width=164 style='border-left:none;width:123pt'>FHIR Resource
   Name</td>
@@ -125,8 +124,8 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Use
   the new extension to connect Observation to ResearchStudy.</td>
  </tr>
- <tr height=140 style='height:105.0pt'>
-  <td height=140 class=xl65 width=126 style='height:105.0pt;border-top:none;
+ <tr height=200 style='height:150.0pt'>
+  <td height=200 class=xl65 width=126 style='height:150.0pt;border-top:none;
   width:95pt'>Study<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Transmission
   Type</td>
@@ -137,34 +136,36 @@ else
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>Determine
   from type of call to service (requesting all data vs incremental data).<span
   style='mso-spacerun:yes'>  </span>NOTE: If data are not persisted between
-  FHIR and LAB, cannot do incremental (no delta detection)</td>
+  FHIR and LAB, cannot do incremental data processing (due to lack of delta
+  detection).</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/@TransmissionType</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>Y</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Determine
-  from the type of call to the FHIR service.</td>
+  from the type of call to the FHIR service.<span style='mso-spacerun:yes'> 
+  </span>Requesting all data would be cumulative; requesting only a subset of
+  data, since the last call, is incremental.</td>
  </tr>
- <tr height=360 style='height:270.0pt'>
-  <td height=360 class=xl65 width=126 style='height:270.0pt;border-top:none;
+ <tr height=260 style='height:195.0pt'>
+  <td height=260 class=xl65 width=126 style='height:195.0pt;border-top:none;
   width:95pt'>Study<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Transaction
   Type</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.</td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>(NOTE: This requires
+  persistent storage to compare current data with data in the incoming file)</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/TransactionType</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.<span
-  style='mso-spacerun:yes'>  </span>NOTE: If data are not persisted between
-  FHIR and LAB, cannot do incremental updates (no delta detection).</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>NOTE: If data are not
+  persisted between FHIR and LAB, cannot do incremental updates (no delta
+  detection).</td>
  </tr>
  <tr height=120 style='height:90.0pt'>
   <td height=120 class=xl65 width=126 style='height:90.0pt;border-top:none;
@@ -173,7 +174,7 @@ else
   ID or Number</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>Observation</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>extension-workflow-researchstudy<span
-  style='mso-spacerun:yes'>  </span>(ref: ResearchStudy..site (ref:
+  style='mso-spacerun:yes'>  </span>(ref: ResearchStudy.site (ref:
   Location.identifier to Location.managingOrganization (Ref:
   Organization.identifier)))</td>
   <td class=xl67 width=162 style='border-top:none;border-left:none;width:122pt'>N/A</td>
@@ -189,27 +190,26 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Use
   the new extension to connect Observation to ResearchStudy.</td>
  </tr>
- <tr height=360 style='height:270.0pt'>
-  <td height=360 class=xl65 width=126 style='height:270.0pt;border-top:none;
+ <tr height=260 style='height:195.0pt'>
+  <td height=260 class=xl65 width=126 style='height:195.0pt;border-top:none;
   width:95pt'>Site<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Transaction
   Type</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.</td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>(NOTE: This requires
+  persistent storage to compare current data with data in the incoming file)</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/TransactionType</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.<span
-  style='mso-spacerun:yes'>  </span>NOTE: If data are not persisted between
-  FHIR and LAB, cannot do incremental updates (no delta detection).</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>NOTE: If data are not
+  persisted between FHIR and LAB, cannot do incremental updates (no delta
+  detection).</td>
  </tr>
  <tr height=80 style='height:60.0pt'>
   <td height=80 class=xl65 width=126 style='height:60.0pt;border-top:none;
@@ -248,30 +248,29 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Provide
   the Investigator name known by the study sponsor.</td>
  </tr>
- <tr height=360 style='height:270.0pt'>
-  <td height=360 class=xl65 width=126 style='height:270.0pt;border-top:none;
+ <tr height=260 style='height:195.0pt'>
+  <td height=260 class=xl65 width=126 style='height:195.0pt;border-top:none;
   width:95pt'>Investigator<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Transaction
   Type</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.</td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>(NOTE: This requires
+  persistent storage to compare current data with data in the incoming file)</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/TransactionType</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.<span
-  style='mso-spacerun:yes'>  </span>NOTE: If data are not persisted between
-  FHIR and LAB, cannot do incremental updates (no delta detection).</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>NOTE: If data are not
+  persisted between FHIR and LAB, cannot do incremental updates (no delta
+  detection).</td>
  </tr>
- <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl65 width=126 style='height:75.0pt;border-top:none;
+ <tr height=140 style='height:105.0pt'>
+  <td height=140 class=xl65 width=126 style='height:105.0pt;border-top:none;
   width:95pt'>Subject<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Screen
   ID or Number</td>
@@ -287,10 +286,11 @@ else
     or SubjectID <br>
     must exist</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Provide
-  the sponsor's research subject ID in this field.</td>
+  the sponsor's research subject ID in this field. Use the identifier.type to
+  differentiate subject identifiers.</td>
  </tr>
- <tr height=120 style='height:90.0pt'>
-  <td height=120 class=xl65 width=126 style='height:90.0pt;border-top:none;
+ <tr height=140 style='height:105.0pt'>
+  <td height=140 class=xl65 width=126 style='height:105.0pt;border-top:none;
   width:95pt'>Subject<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Subject
   ID or Number</td>
@@ -308,7 +308,8 @@ else
     or SubjectID <br>
     must exist</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Provide
-  the sponsor's research subject ID in this field.</td>
+  the sponsor's research subject ID in this field. Use the identifier.type to
+  differentiate subject identifiers.</td>
  </tr>
  <tr height=120 style='height:90.0pt'>
   <td height=120 class=xl65 width=126 style='height:90.0pt;border-top:none;
@@ -326,7 +327,8 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/SpareSubjectID</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Provide
-  an alternative subject ID in this field.</td>
+  an alternative subject ID in this field.<span style='mso-spacerun:yes'> 
+  </span>Use the identifier.type to differentiate subject identifiers.</td>
  </tr>
  <tr height=400 style='height:300.0pt'>
   <td height=400 class=xl65 width=126 style='height:300.0pt;border-top:none;
@@ -466,35 +468,33 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Provide
   the study sponsor's visit identifier.</td>
  </tr>
- <tr height=340 style='height:255.0pt'>
-  <td height=340 class=xl65 width=126 style='height:255.0pt;border-top:none;
+ <tr height=360 style='height:270.0pt'>
+  <td height=360 class=xl65 width=126 style='height:270.0pt;border-top:none;
   width:95pt'>Visit<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Visit
   Name</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>Observation</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>encounter
   (Ref: Encounter.gap)</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>No
-  value mapped - <font class="font0">pending encounterType extension.<span
-  style='mso-spacerun:yes'>  </span>In the interim, use the
-  encounter.identifier field.</font></td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Visit
+  Name can be obtained by sending this as an alternative identifier
+  (encounter.identifier) or through the Schedule of Activities, within the
+  Protocol (see PlanDefinition).</td>
   <td class=xl67 width=207 style='border-top:none;border-left:none;width:155pt'>Observation/encounter/reference/@value
   (=Encounter/identifier)</td>
   <td class=xl67 width=207 style='border-top:none;border-left:none;width:155pt'>Observation/encounter/reference/@value
   (=Encounter/identifier)</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/@Name</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>An
-  extension for the encounter name is still pending.<span
-  style='mso-spacerun:yes'>  </span>This is not required by the LAB
-  model.<br>
-    <br>
-    If a sponsor requires the visit name, use the encounter.identifier.value
-  field to fulfill this purpose.<span style='mso-spacerun:yes'>  </span>Set the
-  encounter.identifier.type.CodeableConcept.text to 'Visit Name'.</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>If
+  a sponsor requires the visit name, use the encounter.identifier.value field
+  to fulfill this purpose.<span style='mso-spacerun:yes'>  </span>Set the
+  encounter.identifier.type.CodeableConcept.text to 'Visit Name'.<span
+  style='mso-spacerun:yes'>  </span>Alternatively, you can use the Schedule of
+  Activities, within the Protocol (see PlanDefinition resource)</td>
  </tr>
- <tr height=440 style='height:330.0pt'>
-  <td height=440 class=xl65 width=126 style='height:330.0pt;border-top:none;
+ <tr height=400 style='height:300.0pt'>
+  <td height=400 class=xl65 width=126 style='height:300.0pt;border-top:none;
   width:95pt'>Visit<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Visit
   Type</td>
@@ -510,17 +510,16 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/@Type</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>Y<br>
     (if Visit exists)</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>An
-  extension for the visit type was rejected.<span style='mso-spacerun:yes'> 
-  </span>Since this is required for the LAB model, we recommend using the
-  contents of the<span style='mso-spacerun:yes'>  </span>encounter.identifier
-  field to assist with determining the type of visit (scheduled or
-  unscheduled).<span style='mso-spacerun:yes'>  </span>To store this in FHIR,
-  use the encounter.identifier.value field and set the
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Since
+  this is required for the LAB model, we recommend using the contents of
+  the<span style='mso-spacerun:yes'>  </span>encounter.identifier field to
+  assist with determining the type of visit (scheduled or unscheduled).<span
+  style='mso-spacerun:yes'>  </span>To store this in FHIR, use the
+  encounter.identifier.value field and set the
   encounter.identifier.type.CodeableConcept.text to 'Visit Type'.</td>
  </tr>
- <tr height=480 style='height:360.0pt'>
-  <td height=480 class=xl65 width=126 style='height:360.0pt;border-top:none;
+ <tr height=400 style='height:300.0pt'>
+  <td height=400 class=xl65 width=126 style='height:300.0pt;border-top:none;
   width:95pt'>Visit<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Visit
   Type Modifier</td>
@@ -535,37 +534,35 @@ else
   (=Encounter/identifier)</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/@TypeModifier</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>An
-  extension for the visit type modifier was rejected.<span
-  style='mso-spacerun:yes'>  </span>This is not required for the LAB
-  model.<span style='mso-spacerun:yes'>  </span>If needed, we recommend using
-  the contents of the<span style='mso-spacerun:yes'> 
-  </span>encounter.identifier field to assist with determining the type of
-  visit (scheduled or unscheduled).<span style='mso-spacerun:yes'>  </span>To
-  store this in FHIR, use the encounter.identifier.value field and set the
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>This
+  is not required for the LAB model.<span style='mso-spacerun:yes'>  </span>If
+  needed, we recommend using the contents of the<span
+  style='mso-spacerun:yes'>  </span>encounter.identifier field to assist with
+  determining the type of visit (scheduled or unscheduled).<span
+  style='mso-spacerun:yes'>  </span>To store this in FHIR, use the
+  encounter.identifier.value field and set the
   encounter.identifier.type.CodeableConcept.text to 'Visit Type Modifier'.</td>
  </tr>
- <tr height=360 style='height:270.0pt'>
-  <td height=360 class=xl65 width=126 style='height:270.0pt;border-top:none;
+ <tr height=260 style='height:195.0pt'>
+  <td height=260 class=xl65 width=126 style='height:195.0pt;border-top:none;
   width:95pt'>Visit<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Transaction
   Type</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.</td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>(NOTE: This requires
+  persistent storage to compare current data with data in the incoming file)</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/TransactionType</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.<span
-  style='mso-spacerun:yes'>  </span>NOTE: If data are not persisted between
-  FHIR and LAB, cannot do incremental updates (no delta detection).</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Determining
+  whether transactions are insert or update will be left to the data
+  consumer.<span style='mso-spacerun:yes'>  </span>NOTE: If data are not
+  persisted between FHIR and LAB, cannot do incremental updates (no delta
+  detection).</td>
  </tr>
  <tr height=80 style='height:60.0pt'>
   <td height=80 class=xl66 width=126 style='height:60.0pt;border-top:none;
@@ -591,10 +588,10 @@ else
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>Observation</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
   <td class=xl67 width=162 style='border-top:none;border-left:none;width:122pt'>At
-  this time, no gap mitigation exists.<span style='mso-spacerun:yes'> 
-  </span>Orders and Observations recommended using meta.lastUpdated, but
-  meta.last Updated will not work for this because it reflects the update to
-  the FHIR server - not the update in the source system.</td>
+  this time, no gap mitigation exists and the data will not be sent.<span
+  style='mso-spacerun:yes'>  </span>Using meta.lastUpdated is not recommended
+  because it reflects the last update to the FHIR server - not the update in
+  the source system.</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl78 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/Accession/@LastActiveDateTime</td>
@@ -606,27 +603,26 @@ else
   plus/minus hours and minutes.<span style='mso-spacerun:yes'>  </span>Since
   this field is not required by LAB, it will not be sent.</td>
  </tr>
- <tr height=360 style='height:270.0pt'>
-  <td height=360 class=xl65 width=126 style='height:270.0pt;border-top:none;
+ <tr height=260 style='height:195.0pt'>
+  <td height=260 class=xl65 width=126 style='height:195.0pt;border-top:none;
   width:95pt'>Accession<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Transaction
   Type</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.</td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>(NOTE: This requires
+  persistent storage to compare current data with data in the incoming file)</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/Accession/TransactionType</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.<span
-  style='mso-spacerun:yes'>  </span>NOTE: If data are not persisted between
-  FHIR and LAB, cannot do incremental updates (no delta detection).</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>NOTE: If data are not
+  persisted between FHIR and LAB, cannot do incremental updates (no delta
+  detection).</td>
  </tr>
  <tr height=120 style='height:90.0pt'>
   <td height=120 class=xl65 width=126 style='height:90.0pt;border-top:none;
@@ -921,7 +917,10 @@ else
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>subject
   (ref: Patient.gap)</td>
   <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>derive
-  from patient.birthDate (Observation.subject (ref: Patient.birthDate))</td>
+  from patient.birthDate (Observation.subject (ref: Patient.birthDate))<br>
+    <br>
+    If the full birthdate cannot be shared, due to country restrictions, use
+  the birth year to derive age information.</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>No
   value mapped</td>
   <td class=xl78 width=207 style='border-top:none;border-left:none;width:155pt'>No
@@ -934,8 +933,8 @@ else
   reconciliation.<span style='mso-spacerun:yes'>  </span>If not, do not send
   this data.</td>
  </tr>
- <tr height=120 style='height:90.0pt'>
-  <td height=120 class=xl65 width=126 style='height:90.0pt;border-top:none;
+ <tr height=280 style='height:210.0pt'>
+  <td height=280 class=xl65 width=126 style='height:210.0pt;border-top:none;
   width:95pt'>Base Specimen<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Subject
   Age Units</td>
@@ -943,14 +942,19 @@ else
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>subject
   (ref: Patient.gap)</td>
   <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>derive
-  from patient.birthDate (Observation.subject (ref: Patient.birthDate))</td>
+  from patient.birthDate (Observation.subject (ref: Patient.birthDate))<br>
+    <br>
+    If the full birthdate cannot be shared, due to country restrictions, use
+  the birth year to derive age information.<span style='mso-spacerun:yes'> 
+  </span>Due to lost accuracy in having only the year of birth, 'years' would
+  be the default unit.</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>No
   value mapped</td>
   <td class=xl78 width=207 style='border-top:none;border-left:none;width:155pt'>No
   value mapped</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/Accession/BaseSpecimen/SubjectAtCollection/@AgeUnits</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>Y<br>
-    (if SubjectAt Collection exists)</td>
+    (if Subject Age At Collection exists)</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>If
   age is shared, include a unit of measure (months, years).</td>
  </tr>
@@ -1008,27 +1012,26 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Populate
   with the battery name, if a battery exists and a battery ID was provided.</td>
  </tr>
- <tr height=360 style='height:270.0pt'>
-  <td height=360 class=xl65 width=126 style='height:270.0pt;border-top:none;
+ <tr height=260 style='height:195.0pt'>
+  <td height=260 class=xl65 width=126 style='height:195.0pt;border-top:none;
   width:95pt'>Base Battery<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Transaction
   Type</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.</td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>(NOTE: This requires
+  persistent storage to compare current data with data in the incoming file)</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/Accession/BaseSpecimen/BaseBattery/TransactionType</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.<span
-  style='mso-spacerun:yes'>  </span>NOTE: If data are not persisted between
-  FHIR and LAB, cannot do incremental updates (no delta detection).</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>NOTE: If data are not
+  persisted between FHIR and LAB, cannot do incremental updates (no delta
+  detection).</td>
  </tr>
  <tr height=500 style='height:375.0pt'>
   <td height=500 class=xl65 width=126 style='height:375.0pt;border-top:none;
@@ -1074,18 +1077,21 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Populate
   with date and time of test.</td>
  </tr>
- <tr height=300 style='height:225.0pt'>
-  <td height=300 class=xl65 width=126 style='height:225.0pt;border-top:none;
+ <tr height=460 style='height:345.0pt'>
+  <td height=460 class=xl65 width=126 style='height:345.0pt;border-top:none;
   width:95pt'>Base Test<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Test
   Type</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>Observation</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl67 width=162 style='border-top:none;border-left:none;width:122pt'>At
-  this time, no gap mitigation exists.<span style='mso-spacerun:yes'> 
-  </span>An extension to Observation is being discussed with Orders and
-  Observations.<span style='mso-spacerun:yes'>  </span>To derive whether the
-  test was for the study or not, we may be able to use the ServiceRequest.</td>
+  <td class=xl67 width=162 style='border-top:none;border-left:none;width:122pt'>The
+  normal transmission of data, via FHIR, is for study tests.<span
+  style='mso-spacerun:yes'>  </span>If non-study test results are required
+  (e.g., adverse event follow-up), these would be obtained via a special
+  request from the data provider.<span style='mso-spacerun:yes'> 
+  </span>Alternatively, if the system requires this field to be populated,
+  derive whether the test was for the study or not, use the ServiceRequest
+  resource.</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/Accession/BaseSpecimen/BaseBattery/BaseTest/@TestType</td>
@@ -1093,9 +1099,12 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>The
   intention of this field is to define whether the test was a study test,
   non-study test, or unscheduled test.<span style='mso-spacerun:yes'> 
-  </span>At this time, there is not an extension to store this on the
-  Observation.<span style='mso-spacerun:yes'>  </span>It may be possible to
-  derive this from the ServiceRequest and (eventually) the PlanDefinition.</td>
+  </span>The normal transmission of data, via FHIR, is for study tests.<span
+  style='mso-spacerun:yes'>  </span>If non-study test results are required
+  (e.g., adverse event follow-up), these would be obtained via a special
+  request from the data provider.<span style='mso-spacerun:yes'>  </span>It may
+  be possible to derive this from the ServiceRequest and (eventually) the
+  PlanDefinition.</td>
  </tr>
  <tr height=120 style='height:90.0pt'>
   <td height=120 class=xl65 width=126 style='height:90.0pt;border-top:none;
@@ -1137,8 +1146,8 @@ else
   name of the laboratory performing the specimen collection and result
   generation.</td>
  </tr>
- <tr height=160 style='height:120.0pt'>
-  <td height=160 class=xl65 width=126 style='height:120.0pt;border-top:none;
+ <tr height=200 style='height:150.0pt'>
+  <td height=200 class=xl65 width=126 style='height:150.0pt;border-top:none;
   width:95pt'>Base Test<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Lab
   Test ID</td>
@@ -1157,7 +1166,10 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/Accession/BaseSpecimen/BaseBattery/BaseTest/LabTest/@ID</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>Y</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>The
-  ID of the test as assigned by the laboratory.</td>
+  ID of the test as assigned by the laboratory. <br>
+    <br>
+    NOTE: since this is a codeable concept, you may provide multiple coding
+  system codes for a test.</td>
  </tr>
  <tr height=120 style='height:90.0pt'>
   <td height=120 class=xl65 width=126 style='height:90.0pt;border-top:none;
@@ -1255,8 +1267,7 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>LOINC
   Code List ID</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>Observation</td>
-  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>code.CodeableConcept.coding.Coding.system)<span
-  style='mso-spacerun:yes'>  </span></td>
+  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>code.CodeableConcept.coding.Coding.system</td>
   <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>Observation/code/coding/system/@value
   = &quot;http://loinc.org&quot;</td>
@@ -1428,27 +1439,26 @@ else
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Populate
   with the date the result was reported.</td>
  </tr>
- <tr height=360 style='height:270.0pt'>
-  <td height=360 class=xl65 width=126 style='height:270.0pt;border-top:none;
+ <tr height=260 style='height:195.0pt'>
+  <td height=260 class=xl65 width=126 style='height:195.0pt;border-top:none;
   width:95pt'>Base Result<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Transaction
   Type</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.</td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>(NOTE: This requires
+  persistent storage to compare current data with data in the incoming file)</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/Accession/BaseSpecimen/BaseBattery/BaseTest/TransactionType</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>A
-  change or extension to FHIR was rejected by the Orders and Observations
-  group.<span style='mso-spacerun:yes'>  </span>Determining whether
-  transactions are insert or update will be left to the data consumer.<span
-  style='mso-spacerun:yes'>  </span>NOTE: If data are not persisted between
-  FHIR and LAB, cannot do incremental updates (no delta detection).</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Determining
+  whether transactions are insert or update is a task for the data
+  consumer.<span style='mso-spacerun:yes'>  </span>NOTE: If data are not
+  persisted between FHIR and LAB, cannot do incremental updates (no delta
+  detection).</td>
  </tr>
  <tr height=140 style='height:105.0pt'>
   <td height=140 class=xl65 width=126 style='height:105.0pt;border-top:none;
@@ -1606,10 +1616,11 @@ else
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>Observation</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
   <td class=xl67 width=162 style='border-top:none;border-left:none;width:122pt'>Determine
-  the precision from the value.</td>
-  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>Precision
-  is implicitly determined from the attribute <br>
+  the precision from the value.<br>
+    <br>
+    Precision is implicitly determined from the attribute <br>
     Observation/valueQuantity/value/@value</td>
+  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl67 width=207 style='border-top:none;border-left:none;width:155pt'>Observation/valueQuantity/value/@value</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/Accession/BaseSpecimen/BaseBattery/BaseTest/BaseResult/SingleResult/NumericResult/@Precision</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>Y<br>
@@ -1627,10 +1638,11 @@ else
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>Observation</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
   <td class=xl67 width=162 style='border-top:none;border-left:none;width:122pt'>Determine
-  the precision from the value.</td>
-  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>Precision
-  is implicitly determined from the attribute <br>
+  the precision from the value.<br>
+    <br>
+    Precision is implicitly determined from the attribute <br>
     Observation/valueQuantity/value/@value</td>
+  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl67 width=207 style='border-top:none;border-left:none;width:155pt'>Observation/valueQuantity/value/@value</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/Accession/BaseSpecimen/BaseBattery/BaseTest/BaseResult/SingleResult/NumericResult/@Precision</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>Y<br>
@@ -1648,10 +1660,11 @@ else
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>Observation</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
   <td class=xl67 width=162 style='border-top:none;border-left:none;width:122pt'>Determine
-  the precision from the value.</td>
-  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>Precision
-  is implicitly determined from the attribute <br>
+  the precision from the value.<br>
+    <br>
+    Precision is implicitly determined from the attribute <br>
     Observation/valueQuantity/value/@value</td>
+  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl67 width=207 style='border-top:none;border-left:none;width:155pt'>Observation/valueQuantity/value/@value</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/Accession/BaseSpecimen/BaseBattery/BaseTest/BaseResult/SingleResult/NumericResult/@Precision</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>Y<br>
@@ -1864,30 +1877,32 @@ else
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Populate
-  with a default value.</td>
-  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>&quot;BASE&quot;
-  (Default value)</td>
+  with a default value, depending on the type of data being transmitted.<br>
+    <br>
+    E.g., &quot;BASE&quot;</td>
+  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>N/A</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>Y</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>This
   allows specification of extensions from the Base Lab Model definition.<span
   style='mso-spacerun:yes'>  </span>For a lab record, this would contain
-  'BASE'.<span style='mso-spacerun:yes'>  </span>For a Microbiology data, this
+  'BASE'.<span style='mso-spacerun:yes'>  </span>For Microbiology data, this
   would contain 'MICROBIO'.</td>
  </tr>
- <tr height=320 style='height:240.0pt'>
-  <td height=320 class=xl65 width=126 style='height:240.0pt;border-top:none;
+ <tr height=400 style='height:300.0pt'>
+  <td height=400 class=xl65 width=126 style='height:300.0pt;border-top:none;
   width:95pt'>Base Result<span style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Result
   Class</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>Observation</td>
-  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Provide
-  only one type of result or provide a way to differentiate which results are
-  reported, conventional, or international units.<span
-  style='mso-spacerun:yes'>  </span>In some cases, the result unit of measure
-  may provide some indication of whether the results are in conventional or SI.</td>
+  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>valueQuantity.system</td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Derive
+  this from the unit of measure system (on the result value), provide only one
+  type of result, or provide a way to differentiate which results are reported,
+  conventional, or international units.<span style='mso-spacerun:yes'> 
+  </span>In some cases, the result unit of measure may provide some indication
+  of whether the results are in conventional or SI.</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl67 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/Study/Site/Investigator/Subject/Visit/Accession/BaseSpecimen/BaseBattery/BaseTest/BaseResult/SingleResult/ResultClass/@value</td>
@@ -1895,13 +1910,13 @@ else
   <td class=xl67 width=135 style='border-top:none;border-left:none;width:101pt'>Specifies
   whether the result units are Reported, Conventional, or SI
   (international).<span style='mso-spacerun:yes'>  </span>Since the FHIR model
-  does not have an attribute for this, one type of result will need to be sent,
-  in the agreed upon class.<span style='mso-spacerun:yes'>  </span>The unit of
-  measure may provide an indication of the result class.<span
-  style='mso-spacerun:yes'> </span></td>
+  does not have an attribute for this, either transmit one type of result, in
+  the agreed upon class, or provide a unit of measure system on the result
+  values. Alternatively, the unit of measure may provide an indication of the
+  result class.<span style='mso-spacerun:yes'> </span></td>
  </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl65 width=126 style='height:45.0pt;border-top:none;
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl65 width=126 style='height:75.0pt;border-top:none;
   width:95pt'>Good Transmission Practice (GTP)<span
   style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Model
@@ -1910,34 +1925,32 @@ else
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
   <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Populate
   with a default value.</td>
-  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>&quot;01-0-00&quot;
-  (Default value)</td>
+  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/@ModelVersion</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>Y</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Note
-  that this cannot be populated by FHIR</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Utilize
+  default values and/or message wrapper content to populate this field.</td>
  </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl65 width=126 style='height:45.0pt;border-top:none;
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl65 width=126 style='height:75.0pt;border-top:none;
   width:95pt'>Good Transmission Practice (GTP)<span
   style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>File
   Creation Date and Time</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Populate
-  with a default value.</td>
-  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>Use
-  File Creation Date</td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Pull
+  from the message wrapper. (file creation date)</td>
+  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/@CreationDateTime</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>Y</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Note
-  that this cannot be populated by FHIR</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Utilize
+  default values and/or message wrapper content to populate this field.</td>
  </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl65 width=126 style='height:45.0pt;border-top:none;
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl65 width=126 style='height:75.0pt;border-top:none;
   width:95pt'>Good Transmission Practice (GTP)<span
   style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Transaction
@@ -1947,49 +1960,46 @@ else
   <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>No
   mitigation.<span style='mso-spacerun:yes'>  </span>If required, fill with a
   default value.</td>
-  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>No
-  value mapped</td>
+  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/TransactionType</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Note
-  that this cannot be populated by FHIR</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Utilize
+  default values and/or message wrapper content to populate this field.</td>
  </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl65 width=126 style='height:45.0pt;border-top:none;
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl65 width=126 style='height:75.0pt;border-top:none;
   width:95pt'>Good Transmission Practice (GTP)<span
   style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Transmission
   Source ID</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Populate
-  with a default value.</td>
-  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>&quot;00000&quot;
-  (Default value)</td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Pull
+  from the message wrapper.</td>
+  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/TransmissionSource/@ID</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>Y</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Note
-  that this cannot be populated by FHIR</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Utilize
+  default values and/or message wrapper content to populate this field.</td>
  </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl65 width=126 style='height:45.0pt;border-top:none;
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl65 width=126 style='height:75.0pt;border-top:none;
   width:95pt'>Good Transmission Practice (GTP)<span
   style='mso-spacerun:yes'> </span></td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Transmission
   Source Name</td>
   <td class=xl65 width=164 style='border-top:none;border-left:none;width:123pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>gap</td>
-  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Populate
-  with a default value.</td>
-  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>&quot;00000&quot;
-  (Default value)</td>
+  <td class=xl65 width=162 style='border-top:none;border-left:none;width:122pt'>Pull
+  from the message wrapper.</td>
+  <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=207 style='border-top:none;border-left:none;width:155pt'>N/A</td>
   <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>/GTP/TransmissionSource/@Name</td>
   <td class=xl87 width=157 style='border-top:none;border-left:none;width:118pt'>N</td>
-  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Note
-  that this cannot be populated by FHIR</td>
+  <td class=xl65 width=135 style='border-top:none;border-left:none;width:101pt'>Utilize
+  default values and/or message wrapper content to populate this field.</td>
  </tr>
  <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>
