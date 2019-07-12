@@ -30,7 +30,7 @@
     }]
   }],
   "copyright" : "Used by permission of HL7, all rights reserved Creative Commons License",
-  "packageId" : "hl7.fhir.us.cdl",
+  "packageId" : "hl7.fhir.us.cdisc-lab",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.0",
   "4.0.0"],

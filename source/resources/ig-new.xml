@@ -27,7 +27,7 @@
     </telecom>
   </contact>
   <copyright value="Used by permission of HL7, all rights reserved Creative Commons License"/>
-  <packageId value="hl7.fhir.us.cdl"/>
+  <packageId value="hl7.fhir.us.cdisc-lab"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
   <fhirVersion value="4.0.0"/>

@@ -59,13 +59,13 @@
   "fixed-business-version" : "0.1.0",
   "gen-examples" : "false",
   "html-template" : "html-template.html",
-  "igtemplate-dir" : "/Users/doug/Documents/HL7/cdl-master",
+  "igtemplate-dir" : "/Users/doug/Documents/HL7/cdisc-lab",
   "license" : "CC0-1.0",
   "logging" : [
     "init", "progress", "context", "html"
   ],
   "no-inactive-codes" : "false",
-  "npm-name" : "hl7.fhir.us.cdl",
+  "npm-name" : "hl7.fhir.us.cdisc-lab",
   "paths" : {
     "output" : "output",
     "pages" : [
@@ -78,7 +78,7 @@
       "source/examples"
     ],
     "specification" : "http://hl7.org/fhir/",
-    "history" : "http://hl7.org/fhir/us/cdl/history.html",
+    "history" : "http://hl7.org/fhir/us/cdisc-lab/history.html",
     "temp" : "generated_output/temp",
     "txCache" : "generated_output/txCache"
   },
@@ -111,5 +111,5 @@
   "tool" : "jekyll",
   "topofpage" : "true",
   "version" : "4.0.0",
-  "working-dir" : "/Users/doug/Documents/HL7/cdl-master"
+  "working-dir" : "/Users/doug/Documents/HL7/cdisc-lab"
 }
