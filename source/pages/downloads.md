@@ -11,6 +11,10 @@ active: downloads
 
 <!-- end TOC -->
 
+The following package file contains an NPM Package used by many of the FHIR tools. It includes all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of this version of the Implementation Guides.:
+
+- [Package](package.tgz)
+
 ### Documentation
 
 A narrative, FHIR resource domain model, and FHIR to CDISC data mappings are provided to assist in transforming laboratory data in FHIR format to a CDISC-compliant structures and standards.
