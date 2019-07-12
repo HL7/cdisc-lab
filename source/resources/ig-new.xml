@@ -14,7 +14,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="/Users/doug/Documents/HL7/cdisc-lab/source/pages"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/cdl/ImplementationGuide/ig"/>
+  <url value="http://hl7.org/fhir/us/cdisc-lab/ImplementationGuide/ig"/>
   <version value="0.1.0"/>
   <name value="FHIR to CDISC Laboratory Data Mapping"/>
   <title value="FHIR to CDISC Laboratory Data Mapping"/>

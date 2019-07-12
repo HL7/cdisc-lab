@@ -1,7 +1,7 @@
 {
   "allviews" : "true",
   "broken-links" : "warning",
-  "canonicalBase" : "http://hl7.org/fhir/us/cdl",
+  "canonicalBase" : "http://hl7.org/fhir/us/cdisc-lab",
   "defaults" : {
     "Any" : {
       "template-base" : "base.html",

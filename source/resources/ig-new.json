@@ -17,7 +17,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "/Users/doug/Documents/HL7/cdisc-lab/source/pages"
   }],
-  "url" : "http://hl7.org/fhir/us/cdl/ImplementationGuide/ig",
+  "url" : "http://hl7.org/fhir/us/cdisc-lab/ImplementationGuide/ig",
   "version" : "0.1.0",
   "name" : "FHIR to CDISC Laboratory Data Mapping",
   "title" : "FHIR to CDISC Laboratory Data Mapping",
