@@ -14,7 +14,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="/Users/doug/Documents/HL7/cdisc-lab/source/pages"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/cdisc-lab/ImplementationGuide/ig"/>
+  <url value="http://hl7.org/fhir/cdisc-lab/ImplementationGuide/ig"/>
   <version value="0.1.0"/>
   <name value="FHIRtoCDISCLaboratoryDataMapping"/>
   <title value="FHIR to CDISC Laboratory Data Mapping"/>
@@ -27,7 +27,7 @@
     </telecom>
   </contact>
   <copyright value="Used by permission of HL7, all rights reserved Creative Commons License"/>
-  <packageId value="hl7.fhir.us.cdisc-lab"/>
+  <packageId value="hl7.fhir.cdisc-lab"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
   <fhirVersion value="4.0.0"/>

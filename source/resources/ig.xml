@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
-  <url value="http://hl7.org/fhir/us/cdisc-lab/ImplementationGuide/ig"/>
+  <url value="http://hl7.org/fhir/cdisc-lab/ImplementationGuide/ig"/>
   <version value="0.1.0"/>
   <name value="FHIRtoCDISCLaboratoryDataMapping"/>
   <title value="FHIR to CDISC Laboratory Data Mapping"/>
@@ -14,7 +14,7 @@
       <value value="http://hl7.org/Special/committees/rcrim"/>
     </telecom>
   </contact>
-  <packageId value="hl7.org.fhir.us.cdisc-lab"/>
+  <packageId value="hl7.org.fhir.cdisc-lab"/>
   <fhirVersion value="4.0.0"/>
   <definition>
     <resource><reference><reference value="CapabilityStatement/server"/></reference><exampleBoolean value="false"/>

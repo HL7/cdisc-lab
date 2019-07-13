@@ -13,7 +13,7 @@
             <p>The Section describes the expected capabilities etc....</p>
         </div>
     </text>
-	<url value="http://hl7.org/fhir/us/cdisc-lab/CapabilityStatement/server"/>
+	<url value="http://hl7.org/fhir/cdisc-lab/CapabilityStatement/server"/>
 	<name value="Server"/>
 	<status value="draft"/>
 	<date value="2019-04-29"/>
