@@ -1,9 +1,4 @@
 <p id="publish-box">
-This is the {% if {{site.build}} == "ci" %}
-    Continuous Integration Build
-   {% else %}
-     {{site.hl7_version}} (release {{site.data.fhir.ig.version}})
-  {% endif %}
-  {% if {{site.build}} == "ballot" %} Ballot {% endif %}
-  of the {{site.data.fhir.igName}} Implementation Guide,  based on <a href="{{ site.data.fhir.path }}index.html">FHIR Version {{ site.data.fhir.version }}</a>.  See the <a href="history.html">Directory of published versions.</a>
+{{site.data.fhir.ig.title}} Implementation Guide (v{{site.data.fhir.ig.version}}:
+<a href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 1 Ballot 1), based on <a href="{{ site.data.fhir.path }}index.html">FHIR Version {{ site.data.fhir.version }}</a>. See the <a href="history.html">Directory of published versions.</a>
 </p>

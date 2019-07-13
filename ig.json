@@ -95,8 +95,6 @@
   },
   "sct-edition" : "http://snomed.info/sct/731000124108",
   "source" : "ig.xml",
-  "spreadsheets" : [
-  ],
   "status" : "draft",
   "structuremaps" : [
     "Foo"
