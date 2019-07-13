@@ -16,7 +16,7 @@
   "path" : "http://hl7.org/fhir/uv/cdisc-lab/",
   "status" : "ballot",
   "fhir-version" : "4.0.0",
-  "sequence" : "Release 4"
+  "sequence" : "Release 1"
  }]
 }
 

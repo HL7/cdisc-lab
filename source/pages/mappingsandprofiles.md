@@ -15,9 +15,7 @@ active: profiles
 
 The FHIR to CDISC mapping is useful for understanding how to relate FHIR resources and attributes to CDISC-compliant data structures and standards.  To ensure a more comprehensive solution, FHIR resources are compared (mapped) to three existing CDISC standards that are used in clinical research laboratory data exchange:  the CDISC LAB model, CDASH LB Domain variables, and SDTM LB variables.  
 
-[Data Mapping](LAB_LB_FHIR_mapping_and_gaps_for_IG.htm)
-
-Download the entire spreadsheet here:  [LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx](LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx)
+Data Mapping:  [LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx](LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx)
 
 <br/>
 

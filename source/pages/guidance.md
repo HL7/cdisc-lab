@@ -33,7 +33,7 @@ The implementation guidance outlined in this page provides useful information fo
 ### Gaps  
 
 ​Some attributes or variables within the CDISC standards do not have corresponding attributes within a FHIR resource.  In some circumstances, data are provided through an alternative method, such as a supplemental file or transmission agreement. Alternately, data may be derived through information provided in a different field and/or resource. Please see the data mapping document for gap and mitigation information.
-<br/>
+<p>&nbsp;</p>
 
 ### Target State  
 
