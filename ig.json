@@ -1,7 +1,7 @@
 {
   "allviews" : "true",
   "broken-links" : "warning",
-  "canonicalBase" : "http://hl7.org/fhir/cdisc-lab",
+  "canonicalBase" : "http://hl7.org/fhir/uv/cdisc-lab",
   "defaults" : {
     "Any" : {
       "template-base" : "base.html",
@@ -65,7 +65,7 @@
     "init", "progress", "context", "html"
   ],
   "no-inactive-codes" : "false",
-  "npm-name" : "hl7.fhir.cdisc-lab",
+  "npm-name" : "hl7.fhir.uv.cdisc-lab",
   "paths" : {
     "output" : "output",
     "pages" : [
@@ -78,7 +78,7 @@
       "source/examples"
     ],
     "specification" : "http://hl7.org/fhir/",
-    "history" : "http://hl7.org/fhir/cdisc-lab/history.html",
+    "history" : "http://hl7.org/fhir/uv/cdisc-lab/history.html",
     "temp" : "generated_output/temp",
     "txCache" : "generated_output/txCache"
   },

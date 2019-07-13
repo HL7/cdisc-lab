@@ -1,7 +1,7 @@
 {
- "package-id" : "hl7.fhir.cdisc-lab",
+ "package-id" : "hl7.fhir.uv.cdisc-lab",
  "title" : "FHIR to CDISC Laboratory Data Mapping Implementation Guide",
- "canonical" : "http://hl7.org/fhir/cdisc-lab",
+ "canonical" : "http://hl7.org/fhir/uv/cdisc-lab",
  "introduction" : "The FHIR to CDISC Laboratory Data Mapping Implementation Guide provides guidance on how to use FHIR resources to capture data.",
  "list" : [{
   "version" : "current",
@@ -13,7 +13,7 @@
   "version" : "0.1.0",
   "date" : "2019-07-12", 
   "desc" : "DSTU 1 Ballot",
-  "path" : "http://hl7.org/fhir/cdisc-lab/2019Sep",
+  "path" : "http://hl7.org/fhir/uv/cdisc-lab/",
   "status" : "ballot",
   "fhir-version" : "4.0.0",
   "sequence" : "Release 4"
