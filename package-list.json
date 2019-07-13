@@ -1,8 +1,8 @@
 {
  "package-id" : "hl7.fhir.uv.cdisc-lab",
- "title" : "FHIR to CDISC Laboratory Data Mapping Implementation Guide",
+ "title" : "CDISC Lab Semantics in FHIR",
  "canonical" : "http://hl7.org/fhir/uv/cdisc-lab",
- "introduction" : "The FHIR to CDISC Laboratory Data Mapping Implementation Guide provides guidance on how to use FHIR resources to capture data.",
+ "introduction" : "The CDISC Lab Semantics in FHIR Implementation Guide provides guidance on how to use FHIR resources to capture data.",
  "list" : [{
   "version" : "current",
   "desc" : "Continuous Integration Build (latest in version control)",

@@ -19,8 +19,8 @@
   }],
   "url" : "http://hl7.org/fhir/uv/cdisc-lab/ImplementationGuide/ig",
   "version" : "0.1.0",
-  "name" : "FHIRtoCDISCLaboratoryDataMapping",
-  "title" : "FHIR to CDISC Laboratory Data Mapping",
+  "name" : "CDISCLabSemanticsinFHIR",
+  "title" : "CDISC Lab Semantics in FHIR",
   "status" : "draft",
   "publisher" : "HL7 International - Biomedical Research and Regulation Work Group",
   "contact" : [{
@@ -55,7 +55,7 @@
     }],
     "page" : {
       "nameUrl" : "index.md",
-      "title" : "FHIR to CDISC Laboratory Data Mapping IG",
+      "title" : "CDISC Lab Semantics in FHIR",
       "generation" : "markdown"
     },
     "parameter" : [{

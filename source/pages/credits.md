@@ -1,5 +1,5 @@
 ---
-title: FHIR to CDISC Laboratory Data Mapping Implementation Guide 
+title: CDISC Lab Semantics in FHIR Implementation Guide
 layout: default
 active: credits
 ---
@@ -41,7 +41,8 @@ Geoff Lowe (Medidata, E2C)
 
 **IG Technical Consultants:**  
 Nagesh Bashyam (Drajer, LLC)  
-Lloyd McKenzie (Gevity Consulting)  
+Grahame Grieve (Health Intersections)  
+Lloyd McKenzie (Gevity Consulting)
 
 **Reviewers:**  
 Phil Pochon (Covance CLS)  

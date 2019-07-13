@@ -1,5 +1,5 @@
 ---
-title: FHIR to CDISC Laboratory Data Mapping Overview
+title: CDISC Lab Semantics in FHIR Implementation Guide
 layout: default
 active: overview
 ---
