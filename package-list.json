@@ -12,11 +12,11 @@
  },{
   "version" : "0.1.0",
   "date" : "2019-07-12", 
-  "desc" : "DSTU 1 Ballot",
+  "desc" : "STU 1 Ballot",
   "path" : "http://hl7.org/fhir/uv/cdisc-lab/2019Sep",
   "status" : "ballot",
   "fhir-version" : "4.0.0",
-  "sequence" : "Release 1"
+  "sequence" : "STU1"
  }]
 }
 
