@@ -30,7 +30,7 @@
   <packageId value="hl7.fhir.uv.cdisc-lab"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <dependsOn id="sdc">
     <uri value="http://hl7.org/fhir/uv/sdc"/>
     <packageId value="hl7.fhir.uv.sdc"/>

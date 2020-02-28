@@ -33,7 +33,7 @@
   "packageId" : "hl7.fhir.uv.cdisc-lab",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.0",
-  "4.0.0"],
+  "4.0.1"],
   "dependsOn" : [{
     "id" : "sdc",
     "uri" : "http://hl7.org/fhir/uv/sdc",

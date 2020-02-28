@@ -108,6 +108,6 @@
   "title" : "FHIR to CDISC Laboratory Data Mapping",
   "tool" : "jekyll",
   "topofpage" : "true",
-  "version" : "4.0.0",
+  "version" : "4.0.1",
   "working-dir" : "/Users/doug/Documents/HL7/cdisc-lab"
 }
