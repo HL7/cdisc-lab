@@ -22,47 +22,22 @@ tools.
 
 ### Documentation
 
-A narrative, FHIR resource domain model, and FHIR to CDISC data mappings are provided to assist in transforming laboratory data in FHIR format to a CDISC-compliant structures and standards.
-
-<p>&nbsp;</p>
-
-### Use Case 1: FHIR to CDISC LAB XML
-
-For the September 2018 Connectathon, transformation code was written to query a sandbox FHIR server and convert the resulting FHIR file into the CDISC LAB XML standard format.  The code is written in Java and is available in github.  The FHIR to CDISC data mapping contains the path information that was used in the Java code. 
-[Connectathon Code for Lab IG](http://github.com/jennindg/MDIT_FHIR_LDM/tree/connectathon2018/)  A sample data set has been developed to provide example data for testing.  
-
-Download the sample data spreadsheet [here.](LB test data for IG.xlsx)
-
-#### Clinical Research Laboratory Data Narrative
-
-Narratives, also known as scenarios, provide insight and context around the domain being discussed.  By walking the reader through a fictitious example, the narrative highlights concepts important for the mapping and modeling work, and provides details for the creation of the test data set.
-
-[Lab Narrative](Lab Narrative for IG.docx)
-
-#### Clinical Research Laboratory Domain Model
-
-The domain model provides a graphic representation of the relevant FHIR resources, attributes, and associations.
-
-[Domain Model](assets/images/Lab IG UML Diagram.jpg)  
-
-#### FHIR to CDISC Laboratory Data Mapping
-
-The FHIR to CDISC mapping is useful for understanding how to relate FHIR resources and attributes to CDISC-compliant data structures and standards.  To ensure a more comprehensive solution, FHIR resources are compared (mapped) to three existing CDISC standards that are used in clinical research laboratory data exchange:  the CDISC LAB model, CDASH LB Domain variables, and SDTM LB variables.  
-
-Data Mapping: [LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx](LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx)
-
-<p>&nbsp;</p>
-
-### Use Case 2: FHIR to CDISC CDASH or SDTM
-
-Since implementations of CDASH and SDTM data stores may vary by sponsor, please see the FHIR to CDISC data mapping document for field level equivalencies to use in processing FHIR lab data files.
-
-Data Mapping:  [LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx](LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx)
-
-<p>&nbsp;</p>
-
-### IG Download
-
-Download the entire implementation guide [here.](full-ig.zip)
-
+#### Below are links to the deliverables described in the Overview section of this guide.
+Download the Narrative: [Lab Narrative](Lab Narrative for IG.docx)<br/>
+Download the Domain Model: [Domain Model](assets/images/Lab IG UML Diagram.jpg)<br/>
+Download the sample data spreadsheet [here.](LB test data for IG.xlsx)<br/>
 <br/>
+Access the Java code from GitHub: [Connectathon Code for Lab IG](http://github.com/jennindg/MDIT_FHIR_LDM/tree/connectathon2018/)<br/>
+ <br/>
+ 
+#### Use Case 1: FHIR to CDISC LAB XML
+
+Please see the [Overview](overview.html) page for a description of the use case.<br/>
+Data Mapping:  [LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx](LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx)<br/>
+ <br/>
+#### Use Case 2: FHIR to CDISC CDASH or SDTM
+Please see the [Overview](overview.html) page for a description of the use case.<br/>
+Data Mapping: [LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx](LAB_LB_FHIR_mapping_and_gaps_for_IG.xlsx)<br/>
+ <br/>
+#### Implementation Guide  Download
+Download the entire implementation guide [here.](full-ig.zip)<br/>

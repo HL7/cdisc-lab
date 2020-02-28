@@ -29,17 +29,29 @@ The following items are **out-of-scope** for this implementation guide:
 
 ###  Purpose and Goals of the Project
 
-The purpose of the FHIR to CDISC Laboratory Data Mapping project is to provide organizations with information on consuming data that have been supplied in a FHIR format, and tranforming the data into the CDISC standards that are required for research sponsors. 
+The purpose of the FHIR to CDISC Laboratory Data Mapping project is to provide organizations with information on consuming data that have been supplied in a FHIR format, and transforming the data into the CDISC standards that are required for research sponsors. The project included the following deliverables:
+
+
+#### Clinical Research Laboratory Data Narrative
+Narratives, also known as scenarios, provide insight and context around the domain being discussed. By walking the reader through a fictitious example, the narrative highlights concepts important for the mapping and modeling work, and provides details for the creation of the test data set.
+
+#### Clinical Research Laboratory Domain Model
+The domain model provides a graphic representation of the relevant FHIR resources, attributes, and associations.  An broader clinical research domain model is available as part of the Biomedical Research Integrated Domain Group (BRIDG) deliverables.  The BRIDG model is supported by the HL7 BR&R working group, as its domain information model, and provides the semantic foundation to artifacts developed by BR&R.  The BRIDG model concepts, definitions, and relationships are leveraged in describing domains.  For more information, please see the BRIDG model web site: https://bridgmodel.nci.nih.gov/
+
+#### FHIR to CDISC Laboratory Data Mapping
+The FHIR to CDISC mapping is useful for understanding how to relate FHIR resources and attributes to CDISC-compliant data structures and standards. To ensure a more comprehensive solution, FHIR resources are compared (mapped) to three existing CDISC standards that are used in clinical research laboratory data exchange: the CDISC LAB model, CDASH LB Domain variables, and SDTM LB variables.
+To view the project deliverables, please see the [Downloads](downloads.html) page. 
 
 <br />
 
-###  CDL Project Data Standards
+### Project Data Standards
 
 This section outlines the CDISC data standards that comprise the scope of data elements for this mapping guide.
 
 | CDISC Standard  | Description of Standard |
 :----------------|-------------------------------------------------------------:|
 | Laboratory Data Model (LAB) | [LAB Description from CDISC](https://www.cdisc.org/standards/data-exchange/lab) |
+| BRIDG | [Biomedical Research Integrated Domain Group](https://bridgmodel.nci.nih.gov/) |
 | CDASH | [CDASH Description from CDISC](https://www.cdisc.org/standards/foundational/cdash) |
 | SDTM | [SDTM Description from CDISC](https://www.cdisc.org/standards/foundational/sdtm) |
 
@@ -48,10 +60,25 @@ This section outlines the CDISC data standards that comprise the scope of data e
 ### Use Cases
 
 The specification describes two use cases:
-1. Sponsor converts FHIR JSON/XML file to CDISC LAB XML standard for consumption by Sponsor systems
-1. Sponsor converts FHIR JSON/XML file to CDISC  CDASH or SDTM standard for consumption by Sponsor systems
 
+### Use Case 1: FHIR to CDISC LAB XML
+
+Use Case 1: FHIR to CDISC LAB XML
+For the first use case, a clinical research sponsor organization that historically consumed data from a CDISC LAB XML format, receives a file in FHIR JSON/XML and converts it to the CDISC standard to allow ingestion of data into existing, CDISC-based systems. 
+
+For the September 2018 Connectathon, transformation code was written to query a sandbox FHIR server and convert the resulting FHIR file into the CDISC LAB XML standard format. The code was written in Java and made available in GitHub. The FHIR to CDISC data mapping contains the path information that was used in the Java code. Source code, sample data, and mappings are available on the [Downloads](downloads.html) page.
+
+### Use Case 2: FHIR to CDISC CDASH or SDTM
+
+In the second use case, a clinical research sponsor organization that historically consumed data CDISC CDASH format, receives a file in FHIR JSON/XML and converts it to the CDISC standard to allow ingestion of data into existing, CDISC-based systems.  The data are also converted to SDTM format, for reporting purposes. 
+
+Since implementations of CDASH and SDTM data stores may vary by sponsor, please see the FHIR to CDISC data mapping document for field level equivalencies to use in processing FHIR lab data files. The data mapping is available on the Downloads page.
+
+<p>&nbsp;</p>
 <br />
+
+#### BRIDG
+The Biomedical Research Integrated Domain Group (BRIDG) Model is a collaborative eort engaging stakeholders from the Clinical Data Interchange Standards Consortium (CDISC), the HL7 BRIDG Work Group, the International Organization for Standardization (ISO), the US National Cancer Institute (NCI), and the US Food and Drug Administration (FDA). The goal of the BRIDG Model is to produce a shared view of the dynamic and static semantics for the domain of basic, pre-clinical, clinical, and translational research and its associated regulatory artifacts. The BRIDG model is supported by the HL7 BR&R WG as its domain information model and is intended to provide the semantic foundation to the artefacts developed by BR&R. It is a conceptual model, although parts of the model are quite granular and therefore often considered a hybrid of conceptual and logical layers. BR&R WG members are leveraging the BRIDG model concepts, definitions, and relationships to inform FHIR resource models.
 
 ### Dependencies
 This implementation guide relies on the following specification:
