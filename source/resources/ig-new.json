@@ -29,6 +29,12 @@
       "value" : "http://hl7.org/Special/committees/rcrim"
     }]
   }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
   "copyright" : "Used by permission of HL7, all rights reserved Creative Commons License",
   "packageId" : "hl7.fhir.uv.cdisc-lab",
   "license" : "CC0-1.0",
@@ -60,7 +66,7 @@
     },
     "parameter" : [{
       "code" : "apply",
-      "value" : "version"
+      "value" : "jurisdiction"
     },
     {
       "code" : "html-template",

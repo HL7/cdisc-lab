@@ -22,7 +22,7 @@ tools.
 
 ### Documentation
 
-#### Below are links to the deliverables described in the Overview section of this guide.
+Below are links to the deliverables described in the Overview section of this guide.<br/>
 Download the Narrative: [Lab Narrative](Lab Narrative for IG.docx)<br/>
 Download the Domain Model: [Domain Model](assets/images/Lab IG UML Diagram.jpg)<br/>
 Download the sample data spreadsheet [here.](LB test data for IG.xlsx)<br/>

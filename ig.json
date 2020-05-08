@@ -66,6 +66,7 @@
   ],
   "no-inactive-codes" : "false",
   "npm-name" : "hl7.fhir.uv.cdisc-lab",
+  "jurisdiction" : "001",
   "paths" : {
     "output" : "output",
     "pages" : [

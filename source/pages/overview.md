@@ -51,7 +51,6 @@ This section outlines the CDISC data standards that comprise the scope of data e
 | CDISC Standard  | Description of Standard |
 :----------------|-------------------------------------------------------------:|
 | Laboratory Data Model (LAB) | [LAB Description from CDISC](https://www.cdisc.org/standards/data-exchange/lab) |
-| BRIDG | [Biomedical Research Integrated Domain Group](https://bridgmodel.nci.nih.gov/) |
 | CDASH | [CDASH Description from CDISC](https://www.cdisc.org/standards/foundational/cdash) |
 | SDTM | [SDTM Description from CDISC](https://www.cdisc.org/standards/foundational/sdtm) |
 
@@ -61,29 +60,37 @@ This section outlines the CDISC data standards that comprise the scope of data e
 
 The specification describes two use cases:
 
-### Use Case 1: FHIR to CDISC LAB XML
+#### Use Case 1: FHIR to CDISC LAB XML
 
 Use Case 1: FHIR to CDISC LAB XML
 For the first use case, a clinical research sponsor organization that historically consumed data from a CDISC LAB XML format, receives a file in FHIR JSON/XML and converts it to the CDISC standard to allow ingestion of data into existing, CDISC-based systems. 
 
 For the September 2018 Connectathon, transformation code was written to query a sandbox FHIR server and convert the resulting FHIR file into the CDISC LAB XML standard format. The code was written in Java and made available in GitHub. The FHIR to CDISC data mapping contains the path information that was used in the Java code. Source code, sample data, and mappings are available on the [Downloads](downloads.html) page.
 
-### Use Case 2: FHIR to CDISC CDASH or SDTM
+#### Use Case 2: FHIR to CDISC CDASH or SDTM
 
-In the second use case, a clinical research sponsor organization that historically consumed data CDISC CDASH format, receives a file in FHIR JSON/XML and converts it to the CDISC standard to allow ingestion of data into existing, CDISC-based systems.  The data are also converted to SDTM format, for reporting purposes. 
+In the second use case, a clinical research sponsor organization that historically consumed data in the CDISC CDASH format, receives a file in FHIR JSON/XML and converts it to the CDISC standard to allow ingestion of data into existing, CDISC-based systems.  The data are also converted to SDTM format, for reporting purposes. 
 
-Since implementations of CDASH and SDTM data stores may vary by sponsor, please see the FHIR to CDISC data mapping document for field level equivalencies to use in processing FHIR lab data files. The data mapping is available on the Downloads page.
+Since implementations of CDASH and SDTM data stores may vary by sponsor, please see the FHIR to CDISC data mapping document for field level equivalencies to use in processing FHIR lab data files. The data mapping is available on the [Downloads](downloads.html) page.  
 
-<p>&nbsp;</p>
 <br />
 
-#### BRIDG
-The Biomedical Research Integrated Domain Group (BRIDG) Model is a collaborative eort engaging stakeholders from the Clinical Data Interchange Standards Consortium (CDISC), the HL7 BRIDG Work Group, the International Organization for Standardization (ISO), the US National Cancer Institute (NCI), and the US Food and Drug Administration (FDA). The goal of the BRIDG Model is to produce a shared view of the dynamic and static semantics for the domain of basic, pre-clinical, clinical, and translational research and its associated regulatory artifacts. The BRIDG model is supported by the HL7 BR&R WG as its domain information model and is intended to provide the semantic foundation to the artefacts developed by BR&R. It is a conceptual model, although parts of the model are quite granular and therefore often considered a hybrid of conceptual and logical layers. BR&R WG members are leveraging the BRIDG model concepts, definitions, and relationships to inform FHIR resource models.
+### BRIDG
+The Biomedical Research Integrated Domain Group (BRIDG) Model is a collaborative effort that includes stakeholders from the Clinical Data Interchange Standards Consortium (CDISC), the HL7 BRIDG Working Group, the International Organization for Standardization (ISO), the US National Cancer Institute (NCI), and the US Food and Drug Administration (FDA).  The goal of the BRIDG Model is to serve as a semantic model for basic, pre-clinical, clinical, and translational research and the associated regulatory artifacts.  [https://bridgmodel.nci.nih.gov/](https://bridgmodel.nci.nih.gov/)  
+
+* Click on “Browse BRIDG Model 5.3.1” button towards the bottom of the screen.
+* This will open a new webpage with BRIDG model in html version
+* Click on package called – CDISC Views
+* Click on diagram called “CDISC Lab Model v 1.0.1 (diagram will open)
+* Click on “Download CDSIC Lab Model v 1.0.1 meta data model”
+* You will be able to download the Excel report.  
+
+<br />
 
 ### Dependencies
 This implementation guide relies on the following specification:
 * **[FHIR R4]({{site.data.fhir.path}})** - The 'current' official version of FHIR as of the time this implementation guide was published.  
 
-This implementation guide defines additional constraints and usage expectations above and beyond the information found in these base specifications.
+This implementation guide defines additional constraints and usage expectations above and beyond the information found in the base specifications.
 
 <br/>

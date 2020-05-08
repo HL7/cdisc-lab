@@ -16,24 +16,24 @@ active: credits
 
 ###  Credits
 
-**Primary author:**  
-Christine Denney (Eli Lilly)  
+**Lead Author:**  
+Christine Denney (Eli Lilly and Co.)  
 
 **CDISC Data Mapping SMEs:**  
 Lorraine Spencer (EMD Serono)  
 Aruna Vattikola (Novartis)  
 
 **IG Site Developer:**  
-Douglas Denney (Eli Lilly)  
+Douglas Denney (Eli Lilly and Co.)  
 
 **Connectathon Development:**  
-Roland Hartich (Eli Lilly)  
+Roland Hartich (Eli Lilly and Co.)  
 Pradeep Mysore (Allegient)  
-Angela Romano (Eli Lilly)  
+Angela Romano (Eli Lilly and Co.)  
 
 **Project Leadership:**  
 Hugh Glover (Blue Wave Informatics, LLP)  
-Donald Jennings (Eli Lilly)  
+Donald Jennings (Eli Lilly and Co.)  
 
 **Data Mapping Contributors:**  
 Julie Evans (Samvit Solutions. LLC)  

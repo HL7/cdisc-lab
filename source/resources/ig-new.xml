@@ -26,6 +26,12 @@
       <value value="http://hl7.org/Special/committees/rcrim"/>
     </telecom>
   </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
   <copyright value="Used by permission of HL7, all rights reserved Creative Commons License"/>
   <packageId value="hl7.fhir.uv.cdisc-lab"/>
   <license value="CC0-1.0"/>
@@ -55,7 +61,7 @@
     </page>
     <parameter>
       <code value="apply"/>
-      <value value="version"/>
+      <value value="jurisdiction"/>
     </parameter>
     <parameter>
       <code value="html-template"/>
