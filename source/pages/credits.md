@@ -1,5 +1,5 @@
 ---
-title: CDISC Lab Semantics in FHIR Implementation Guide
+title: Clinical Research Sponsor Laboratory Semantics in FHIR
 layout: default
 active: credits
 ---

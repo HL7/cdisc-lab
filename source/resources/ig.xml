@@ -4,7 +4,7 @@
   <url value="http://hl7.org/fhir/uv/cdisc-lab/ImplementationGuide/ig"/>
   <version value="0.1.0"/>
   <name value="CDISCLabSemanticsinFHIR"/>
-  <title value="CDISC Lab Semantics in FHIR"/>
+  <title value="Clinical Research Sponsor Laboratory Semantics in FHIR"/>
   <status value="draft"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
 <copyright value="Used by permission of HL7, all rights reserved Creative Commons License"/>
@@ -21,7 +21,7 @@
     </resource>
     <page>
       <nameUrl value="index.md"/>
-      <title value="CDISC Lab Semantics in FHIR"/>
+      <title value="Clinical Research Sponsor Laboratory Semantics in FHIR"/>
       <generation value="markdown"/>
     </page>
   </definition>

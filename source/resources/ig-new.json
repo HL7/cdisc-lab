@@ -20,7 +20,7 @@
   "url" : "http://hl7.org/fhir/uv/cdisc-lab/ImplementationGuide/ig",
   "version" : "0.1.0",
   "name" : "CDISCLabSemanticsinFHIR",
-  "title" : "CDISC Lab Semantics in FHIR",
+  "title" : "Clinical Research Sponsor Laboratory Semantics in FHIR",
   "status" : "draft",
   "publisher" : "HL7 International - Biomedical Research and Regulation Work Group",
   "contact" : [{
@@ -61,7 +61,7 @@
     }],
     "page" : {
       "nameUrl" : "index.md",
-      "title" : "CDISC Lab Semantics in FHIR",
+      "title" : "Clinical Research Sponsor Laboratory Semantics in FHIR",
       "generation" : "markdown"
     },
     "parameter" : [{
