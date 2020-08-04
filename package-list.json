@@ -15,7 +15,8 @@
   "desc" : "STU 1 Ballot",
   "path" : "http://hl7.org/fhir/uv/cdisc-lab/2019Sep",
   "status" : "ballot",
-  "fhir-version" : "4.0.0",
+  "fhir-version" : "4.0.1",
+  "fhirversion" : "4.0.1",
   "sequence" : "STU1"
  }]
 }
