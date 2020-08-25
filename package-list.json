@@ -4,21 +4,31 @@
  "canonical" : "http://hl7.org/fhir/uv/cdisc-lab",
  "introduction" : "The CDISC Lab Semantics in FHIR Implementation Guide provides guidance on how to use FHIR resources to capture data.",
  "list" : [{
-  "version" : "current",
-  "desc" : "Continuous Integration Build (latest in version control)",
-  "path" : "http://build.fhir.org/ig/HL7/cdisc-lab/",
-  "status" : "ci-build",
-  "current" : true
+      "version" : "current",
+      "desc" : "Continuous Integration Build (latest in version control)",
+      "path" : "http://build.fhir.org/ig/HL7/cdisc-lab/",
+      "status" : "ci-build",
+      "current" : true
  },{
-  "version" : "1.0.0",
-  "date" : "2019-07-12", 
-  "desc" : "STU 1 Ballot",
-  "path" : "http://hl7.org/fhir/uv/cdisc-lab/2019Sep",
-  "status" : "ballot",
-  "fhir-version" : "4.0.1",
-  "fhirversion" : "4.0.1",
-  "sequence" : "STU1",
-  "category" : "Diagnostics"
+     "version" : "1.0.0",
+     "date" : "2020-08-25",
+     "desc" : "The first official published version of this IG",
+     "path" : "http://hl7.org/fhir/uv/cdisc-lab/STU1",
+     "status" : "ballot",
+     "fhir-version" : "4.0.1",
+     "fhirversion" : "4.0.1",
+     "sequence" : "STU1",
+     "category" : "Diagnostics"
+ },{
+     "version" : "0.1.0",
+     "date" : "2019-07-12",
+     "desc" : "STU 1 Ballot",
+     "path" : "http://hl7.org/fhir/uv/cdisc-lab/2019Sep",
+     "status" : "ballot",
+     "fhir-version" : "4.0.1",
+     "fhirversion" : "4.0.1",
+     "sequence" : "STU1",
+     "category" : "Diagnostics"
  }]
 }
 
