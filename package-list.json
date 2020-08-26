@@ -15,7 +15,7 @@
      "date" : "2020-08-25",
      "desc" : "The first official published version of this IG",
      "path" : "http://hl7.org/fhir/uv/cdisc-lab/STU1",
-     "status" : "ballot",
+     "status" : "trial-use",
      "fhirversion" : "4.0.1",
      "sequence" : "STU1",
      "current" : true
