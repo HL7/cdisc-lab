@@ -56,7 +56,7 @@
   ],
   "do-transforms" : "false",
   "extraTemplates" : ["mappings"],
-  "fixed-business-version" : "0.1.0",
+  "fixed-business-version" : "1.0.0",
   "gen-examples" : "false",
   "html-template" : "html-template.html",
   "igtemplate-dir" : "/Users/doug/Documents/HL7/cdisc-lab",

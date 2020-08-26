@@ -18,7 +18,7 @@
     "valueString" : "/Users/doug/Documents/HL7/cdisc-lab/source/pages"
   }],
   "url" : "http://hl7.org/fhir/uv/cdisc-lab/ImplementationGuide/ig",
-  "version" : "0.1.0",
+  "version" : "1.0.0",
   "name" : "CDISCLabSemanticsinFHIR",
   "title" : "Clinical Research Sponsor Laboratory Semantics in FHIR",
   "status" : "active",
