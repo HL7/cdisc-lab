@@ -18,7 +18,7 @@
   <version value="0.1.0"/>
   <name value="CDISCLabSemanticsinFHIR"/>
   <title value="Clinical Research Sponsor Laboratory Semantics in FHIR"/>
-  <status value="draft"/>
+  <status value="active"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
   <contact>
     <telecom>
@@ -35,7 +35,7 @@
   <copyright value="Used by permission of HL7, all rights reserved Creative Commons License"/>
   <packageId value="hl7.fhir.uv.cdisc-lab"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="sdc">
     <uri value="http://hl7.org/fhir/uv/sdc"/>

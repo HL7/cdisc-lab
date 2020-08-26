@@ -21,7 +21,7 @@
   "version" : "0.1.0",
   "name" : "CDISCLabSemanticsinFHIR",
   "title" : "Clinical Research Sponsor Laboratory Semantics in FHIR",
-  "status" : "draft",
+  "status" : "active",
   "publisher" : "HL7 International - Biomedical Research and Regulation Work Group",
   "contact" : [{
     "telecom" : [{
@@ -38,7 +38,7 @@
   "copyright" : "Used by permission of HL7, all rights reserved Creative Commons License",
   "packageId" : "hl7.fhir.uv.cdisc-lab",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["4.0.0",
+  "fhirVersion" : ["4.0.1",
   "4.0.1"],
   "dependsOn" : [{
     "id" : "sdc",
